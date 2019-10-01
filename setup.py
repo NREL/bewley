@@ -9,8 +9,6 @@ try:
 except ImportError:
     from distutils.core import setup
 
-requirements = ['matplotlib', 
-                'plotly']
 
 # Read the version from the __init__.py file without importing it
 def read(*names, **kwargs):
@@ -35,6 +33,6 @@ setup(name='bewley',
       author_email='monte.lunacek@nrel.gov',
       url='https://github.com/nrel/bewley',
       packages=['bewley'],
-      install_requires=requirements,
+      install_requires=['matplotlib'],
       package_data={'bewley': []},
      )

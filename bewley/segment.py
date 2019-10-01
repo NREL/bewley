@@ -1,7 +1,7 @@
 
 
 
-class Segment:
+class Segment(object):
     
     def __init__(self, x0, y0, x1, drop, column, color):
         self._x0 = x0
